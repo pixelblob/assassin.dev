@@ -5,6 +5,7 @@ import ProjectCard from "@components/ProjectCard";
 
 // for some reason `next/image` doesnt work if provided a URL
 import placholder from "@public/images/projects/placeholder.png";
+import wgm from "@public/images/projects/wgm.png";
 import assassin_dev from "@public/images/projects/assassin-dev.png";
 import Monarch from "@public/images/projects/monarch.png";
 import vngrd from "@public/images/projects/vngrd.png";
@@ -32,10 +33,16 @@ export default function Projects() {
                     description={"A community made spiritual succesor to 'Titanfall 2'"}
                 />
                 <ProjectCard
-                    title={"Stable Diffusion Bot"}
-                    image={sdb}
-                    href={"https://github.com/ShyAssassin/Stable-Diffusion-Bot"}
-                    description={"A Discord bot for generating images with Stable Diffusion"}
+                    title={"WGM"}
+                    image={wgm}
+                    href={"https://github.com/ShyAssassin/wgm"}
+                    description={"A fast and easy to use math library with minimal external dependencies"}
+                />
+                <ProjectCard
+                    title={"Pregen"}
+                    image={placholder}
+                    href={"https://github.com/ShyAssassin/Pregen"}
+                    description={"A fast, portable and extensible game engine written in rust"}
                 />
                 <ProjectCard
                     title={"assassin.dev"}
@@ -43,6 +50,12 @@ export default function Projects() {
                     href={"https://github.com/ShyAssassin/assassin.dev"}
                     description={"A complete revamp of my personal website and portfolio"}
                 />
+                <ProjectCard
+                    title={"Stable Diffusion Bot"}
+                    image={sdb}
+                    href={"https://github.com/ShyAssassin/Stable-Diffusion-Bot"}
+                    description={"A Discord bot for generating images with Stable Diffusion"}
+                />{/* 
                 <ProjectCard
                     title={"Monarch"}
                     image={Monarch}
@@ -54,7 +67,7 @@ export default function Projects() {
                     image={placholder}
                     href={"https://github.com/ShyAssassin/PyMake"}
                     description={"A simple tool to add make-like functionality to Python projects"}
-                />
+                /> */}
             </SimpleGrid>
         </Layout>
     );
