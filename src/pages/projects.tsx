@@ -6,6 +6,7 @@ import ProjectCard from "@components/ProjectCard";
 // for some reason `next/image` doesnt work if provided a URL
 import placholder from "@public/images/projects/placeholder.png";
 import wgm from "@public/images/projects/wgm.png";
+import pregen from "@public/images/projects/pregen.png";
 import assassin_dev from "@public/images/projects/assassin-dev.png";
 import Monarch from "@public/images/projects/monarch.png";
 import vngrd from "@public/images/projects/vngrd.png";
@@ -40,7 +41,7 @@ export default function Projects() {
                 />
                 <ProjectCard
                     title={"Pregen"}
-                    image={placholder}
+                    image={pregen}
                     href={"https://github.com/ShyAssassin/Pregen"}
                     description={"A fast, portable and extensible game engine written in rust"}
                 />
